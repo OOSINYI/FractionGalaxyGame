@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction Galaxy: Math Space Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Fraction Galaxy: Math Space Adventure</h1>
+        <div id="game-modes">
+            <button id="start-addition">Start Fuel Mix-Up (Addition)</button>
+            <button id="start-subtraction">Start Asteroid Split (Subtraction)</button>
+        </div>
+
+        <div id="game-area" class="hidden">
+            <h2 id="mini-game-title"></h2>
+            <div id="question-display"></div>
+            <div id="visual-aid"></div>
+            <div id="answer-input">
+                Your Answer: 
+                <input type="number" id="numerator-input" placeholder="Numerator"> / 
+                <input type="number" id="denominator-input" placeholder="Denominator">
+                <button id="submit-answer">Submit</button>
+            </div>
+            <div id="feedback-display"></div>
+            <button id="next-question" class="hidden">Next Question</button>
+        </div>
+
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p id="score-display"></p>
+            <button id="restart-game">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
